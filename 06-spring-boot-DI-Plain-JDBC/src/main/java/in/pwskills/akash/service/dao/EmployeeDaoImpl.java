@@ -27,6 +27,7 @@ public class EmployeeDaoImpl implements IEmployeeDao {
 		
 		List<EmployeeBO> listBo = null;
 		EmployeeBO bo = null;
+		System.out.println("DATASOURCE TYPE IS :: "+dataSource.getClass().getName());
 	
 		try(Connection connection = dataSource.getConnection();
 				//use connection and perform DB operation using plan JDBC

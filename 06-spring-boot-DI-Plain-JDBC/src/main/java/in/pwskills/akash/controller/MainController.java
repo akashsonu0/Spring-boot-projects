@@ -29,7 +29,7 @@ public class MainController {
 			
 			EmployeeVO vo = new EmployeeVO();
 			
-			//copy such properties whose datatypes are same
+			//copy such properties whose datatypes and field names should be same
 			BeanUtils.copyProperties(dto, vo);
 			
 			//setting the properties whose datatypes are not same
