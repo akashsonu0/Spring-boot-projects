@@ -15,7 +15,8 @@ import in.pwskills.akash.controller.MainController;
 @SpringBootApplication(exclude = { DataSourceAutoConfiguration.class, JdbcTemplateAutoConfiguration.class})
 public class Application {
 
-    public static void main(String[] args) {
+    @SuppressWarnings("resource")
+	public static void main(String[] args) {
 
         // Start the container
     	System.out.println("*************Conatiner Started*************");
