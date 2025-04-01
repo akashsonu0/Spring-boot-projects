@@ -3,40 +3,40 @@ spring:
   datasource:
     password: root123
     url: jdbc:mysql://pwskills_octbatch
-    username: root
-    
+    username: root  
 ---
 spring:
-  profiles:
-    active:
-    - dev
+  config:
+    activate:
+      on-profile:
+      - dev
   datasource:
     type: org.apache.commons.dbcp2.BasicDataSource
-     
----
+ ---
 spring:
-  profiles:
-    active:
-    - qa
+  config:
+    activate:
+      on-profile: 
+      -qa
   datasource:
-    type: org.apache.tomcat.jdbc.pool.DataSource
-      
+    type: org.apache.tomcat.jdbc.pool.DataSource    
 ---
 spring:
-  profiles:
-    active:
-    - uat
+  config:
+    activate:
+      on-profile:
+      - uat
   datasource:
     username: system
     url: jdbc:oracle:thin:@localhost:1521:XE
     password: system123
-    type: oracle:ucp.jdbc.PoolDataSource
-         
+    type: oracle:ucp.jdbc.PoolDataSource       
 ---
 spring:
-  profiles:
-    active:
-    - prod
+  config:
+    activate:
+      on-profile:
+      -prod
   datasource:
     username: system
     url: jdbc:oracle:thin:@localhost:1521:XE
