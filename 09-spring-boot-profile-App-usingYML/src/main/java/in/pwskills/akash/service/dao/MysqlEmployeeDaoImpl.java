@@ -10,11 +10,22 @@ import java.util.List;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 import in.pwskills.akash.beans.EmployeeBO;
 @Repository("dao")
-public class EmployeeDaoImpl implements IEmployeeDao {
+@Profile(value = {"dev","qa"})
+public class MysqlEmployeeDaoImpl implements IEmployeeDao {
+	
+	static {
+		System.out.println("MysqlEmployeeDaoImpl.class file is loading");
+	}
+	
+	public MysqlEmployeeDaoImpl() {
+		System.out.println("MysqlEmployeeDaoImpl:: Zero param constructor....");
+		
+	}
 	
 	//SELECT * FROM employee WHERE job IN ('batsman','bowler');
 	private static final String GET_EMP_DESG = "SELECT * FROM employee WHERE job IN ";
