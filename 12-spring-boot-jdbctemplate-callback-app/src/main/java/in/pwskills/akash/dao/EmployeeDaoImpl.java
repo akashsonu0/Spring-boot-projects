@@ -1,7 +1,5 @@
 package in.pwskills.akash.dao;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -77,21 +75,16 @@ public class EmployeeDaoImpl implements IEmployeeDao {
 		
 		ArrayList<EmployeeBO> employeeBo = new ArrayList<>();
 		
-		template.query(GET_ALL_EMPLOYEES, new RowCallbackHandler() {
-
-			@Override
-			public void processRow(ResultSet rs) throws SQLException {
-				System.out.println("EmployeeDaoImpl.getAllEmployees().new RowCallbackHandler() {...}.processRow()");
-				EmployeeBO bo = new EmployeeBO();
-				bo.setEmpNo(rs.getInt(1));
-				bo.setEname(rs.getString(2));
-				bo.setJob(rs.getString(3));
-				bo.setSalary(rs.getFloat(4));
-				bo.setDeptNo(rs.getInt(5));
-				bo.setMgrNo(rs.getInt(6));
-				employeeBo.add(bo);
-			}	
-		   
+		template.query(GET_ALL_EMPLOYEES, (RowCallbackHandler) rs -> {
+			System.out.println("EmployeeDaoImpl.getAllEmployees().new RowCallbackHandler() {...}.processRow()");
+			EmployeeBO bo = new EmployeeBO();
+			bo.setEmpNo(rs.getInt(1));
+			bo.setEname(rs.getString(2));
+			bo.setJob(rs.getString(3));
+			bo.setSalary(rs.getFloat(4));
+			bo.setDeptNo(rs.getInt(5));
+			bo.setMgrNo(rs.getInt(6));
+			employeeBo.add(bo);
 		});
 		return employeeBo;
 	}
