@@ -13,9 +13,9 @@ public class PersistenceConfig {
 	
 	@Autowired
 	private Environment environment;
-	
-	@Bean
-	public DataSource getDataSource() {
+
+    @Bean
+    DataSource getDataSource() {
 		System.out.println("PersistanceConfig.getDataSource()");
 		
 		ComboPooledDataSource dataSource = new ComboPooledDataSource();

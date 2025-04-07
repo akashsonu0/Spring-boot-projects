@@ -22,9 +22,9 @@ public class Application {
     public Application() {
         System.out.println("Application Object is created...");
     }
-    
-    @Bean(name ="ldt")
-    public LocalDateTime ldtObj() {
+
+    @Bean(name = "ldt")
+    LocalDateTime ldtObj() {
     	System.out.println("Bean created with name :: ldt -> Application.ldtObj()" );
     	return LocalDateTime.now();
     }
