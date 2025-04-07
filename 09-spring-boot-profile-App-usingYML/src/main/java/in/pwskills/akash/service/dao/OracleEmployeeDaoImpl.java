@@ -10,12 +10,15 @@ import java.util.List;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.sql.init.dependency.DependsOnDatabaseInitialization;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 import in.pwskills.akash.beans.EmployeeBO;
+
+@DependsOnDatabaseInitialization
 @Repository("dao")
-@Profile(value = {"uat","prod","prodst"})
+@Profile(value = {"uat", "prod", "prodst"})
 public class OracleEmployeeDaoImpl implements IEmployeeDao {
 	
 	static {

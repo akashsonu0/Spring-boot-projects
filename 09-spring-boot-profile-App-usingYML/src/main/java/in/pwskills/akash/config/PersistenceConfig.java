@@ -14,10 +14,10 @@ public class PersistenceConfig {
 	
 	@Autowired
 	private Environment environment;
-	
-	@Bean
-	@Profile(value = "prodst")
-	public DataSource getDataSource() {
+
+    @Bean
+    @Profile(value = "prodst")
+    DataSource getDataSource() {
 		System.out.println("PersistanceConfig.getDataSource()");
 		
 		ComboPooledDataSource dataSource = new ComboPooledDataSource();
