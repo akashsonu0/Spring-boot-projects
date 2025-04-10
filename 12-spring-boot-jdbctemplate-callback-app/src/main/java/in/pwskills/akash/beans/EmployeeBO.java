@@ -1,10 +1,12 @@
 package in.pwskills.akash.beans;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 public class EmployeeBO implements Serializable {
-	
-	private static final long serialVersionUID = 1L;
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 	
 	private Integer empNo;
 	private String ename;
