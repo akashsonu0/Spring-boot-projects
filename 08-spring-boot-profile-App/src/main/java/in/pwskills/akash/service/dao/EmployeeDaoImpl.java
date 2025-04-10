@@ -10,9 +10,12 @@ import java.util.List;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.sql.init.dependency.DependsOnDatabaseInitialization;
 import org.springframework.stereotype.Repository;
 
 import in.pwskills.akash.beans.EmployeeBO;
+
+@DependsOnDatabaseInitialization
 @Repository("dao")
 public class EmployeeDaoImpl implements IEmployeeDao {
 	
