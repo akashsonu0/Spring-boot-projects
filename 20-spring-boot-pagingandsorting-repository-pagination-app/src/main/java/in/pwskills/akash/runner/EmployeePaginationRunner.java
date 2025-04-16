@@ -39,9 +39,7 @@ public class EmployeePaginationRunner implements CommandLineRunner {
 		System.out.println("Total no of Pages :: "+ page.getTotalPages());
 		System.out.println("Total records	  :: "+ page.getTotalElements());
 		System.out.println("Each Page size    :: "+ page.getSize());
-		System.out.println("Page has content  :: "+ page.hasContent());
-
-		
+		System.out.println("Page has content  :: "+ page.hasContent());	
 		
 	}
 
