@@ -1,6 +1,7 @@
 package in.pwskills.akash.runner;
 
 import java.util.Arrays;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -32,7 +33,24 @@ public class BookRunner implements CommandLineRunner {
 				);
 		
 			repo.findByAuthor("zabi").forEach(System.out::println);
+			
+			repo.findByBookCostGreaterThanEqual(300).forEach(System.out::println);
 
+			repo.findByBookIdIn(List.of(101,105)).forEach(System.out::println);
+
+			repo.findByBookIdBetween(101,103).forEach(System.out::println);
+			
+			repo.findByBookIdLessThanEqualOrBookTypeLike(101,"backend").forEach(System.out::println);
+			
+			repo.findByBookCostNotAndAuthorNotLike(500.0,"%R%").forEach(System.out::println);
+			
+			repo.findByAuthorIsNull().forEach(System.out::println);
+
+			repo.findByAuthorIsNotNull().forEach(System.out::println);
+			
+			repo.findByBookId(10).ifPresentOrElse(System.out::println, ()->System.out.println("Record not for the given id"));
+			
+			
 	}
 
 }
