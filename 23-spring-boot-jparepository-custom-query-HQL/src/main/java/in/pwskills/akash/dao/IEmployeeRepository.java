@@ -23,4 +23,7 @@ public interface IEmployeeRepository extends JpaRepository<Employee, Integer> {
 	@Query("SELECT empId,empDept FROM Employee WHERE empDept =:dept")
 	public List<Object[]> fetchBasedonDept(String dept);
 	
+	//@Query("SELECT empId,empDept FROM Employee WHERE empDept =:dep")
+	//public List<Object[]> fetchBasedonDept(@Param("dep") String dept);
+	
 }
