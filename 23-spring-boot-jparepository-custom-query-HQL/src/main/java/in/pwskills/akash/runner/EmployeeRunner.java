@@ -50,7 +50,24 @@ public class EmployeeRunner implements CommandLineRunner {
 			System.out.println();
 		}
 		
+		System.out.println("Before deletion:: ");
+		repo.fetchAllEmployees().forEach(System.out::println);
+	
+		System.out.println("No of records delete are ::" +repo.deleteEmployeeById(101));
+		
+		System.out.println("After deletion:: ");
+		repo.fetchAllEmployees().forEach(System.out::println);
+		
+		System.out.println("Before updation salary:: ");
+		repo.fetchAllEmployees().forEach(System.out::println);
+		
+		System.out.println("No of records updated is ::" +repo.updateEmployeeSalaryById(102, 200.0));
+		
+		System.out.println("After updation salary:: ");
+		repo.fetchAllEmployees().forEach(System.out::println);
+		
 		
 	}
+	
 
 }
