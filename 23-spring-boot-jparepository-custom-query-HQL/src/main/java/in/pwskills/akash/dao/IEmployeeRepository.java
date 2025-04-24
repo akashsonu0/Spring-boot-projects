@@ -34,8 +34,8 @@ public interface IEmployeeRepository extends JpaRepository<Employee, Integer> {
 	
 	//======================non-select operation======================
 	@Query("DELETE FROM Employee WHERE empId=:id")
-	@Modifying
-	@Transactional
+	@Modifying      //instruction the query is DML
+	@Transactional //commit and rollback
 	public int deleteEmployeeById(Integer id);
 	
 	@Query("UPDATE Employee SET empSal=empSal+:bonus where empId=:id")
