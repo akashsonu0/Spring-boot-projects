@@ -1,0 +1,4 @@
+name : akash sonu
+dob  : 17/11/2005
+education : B.tech(CSE)
+SkillSet : Java,JEE,Spring,Microservices,React
