@@ -35,5 +35,4 @@ public class WishMessageGenerator {
     	}
 		return msg;
     }
-
 }
