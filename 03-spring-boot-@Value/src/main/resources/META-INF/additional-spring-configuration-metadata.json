@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "dosa.price",
+    "type": "java.lang.String",
+    "description": "A description for 'dosa.price'"
+  },
+  {
+    "name": "vada.price",
+    "type": "java.lang.String",
+    "description": "A description for 'vada.price'"
+  }
+]}
