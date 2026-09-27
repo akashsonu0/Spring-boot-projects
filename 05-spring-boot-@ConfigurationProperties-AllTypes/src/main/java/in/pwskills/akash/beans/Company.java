@@ -30,6 +30,4 @@ public class Company {
 	public String toString() {
 		return "Company [title=" + title + ", location=" + location + ", size=" + size + "]";
 	}
-	
-	
 }

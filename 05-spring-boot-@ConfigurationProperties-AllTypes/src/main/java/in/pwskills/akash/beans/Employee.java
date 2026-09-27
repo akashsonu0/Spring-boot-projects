@@ -63,7 +63,5 @@ public class Employee {
 			return "Employee [name=" + name + ", eid=" + eid + ", nickNames=" + Arrays.toString(nickNames)
 					+ ", friendsNames=" + friendsNames + ", phoneNumber=" + phoneNumber + ", bankDetails=" + bankDetails
 					+ ", company=" + company + "]";
-		}	
-		
-		
+		}			
 }
