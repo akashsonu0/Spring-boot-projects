@@ -57,9 +57,7 @@ public class EmployeeMgmtServiceImpl implements IEmployeeMgmtService {
 					//add the object to listDto
 					listDto.add(dto);
 				}
-	);
-		
+	);	
 		return listDto;
 	}
-
 }
