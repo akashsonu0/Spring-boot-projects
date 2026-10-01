@@ -26,5 +26,4 @@ public class PersistenceConfig {
 		dataSource.setPassword(environment.getProperty("spring.datasource.password"));
 		return dataSource;
 	}
-
 }
