@@ -51,5 +51,4 @@ public class EmployeeBO {
 		this.mgrNo = mgrNo;
 	}
 		
-
 }

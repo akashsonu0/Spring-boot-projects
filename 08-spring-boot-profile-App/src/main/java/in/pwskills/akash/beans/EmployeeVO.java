@@ -39,7 +39,6 @@ public class EmployeeVO {
 	
 	public void setSrNo(String srNo) {
 		this.srNo = srNo;
-	}
-		
+	}	
 	
 }
