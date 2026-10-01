@@ -1,0 +1,32 @@
+{"properties": [
+  {
+    "name": "emp.info.eid",
+    "type": "java.lang.String",
+    "description": "A description for 'emp.info.eid'"
+  },
+  {
+    "name": "emp.info.eaddress",
+    "type": "java.lang.String",
+    "description": "A description for 'emp.info.eaddress'"
+  },
+  {
+    "name": "emp.info.ename",
+    "type": "java.lang.String",
+    "description": "A description for 'emp.info.ename'"
+  },
+  {
+    "name": "std.info.sid",
+    "type": "java.lang.String",
+    "description": "A description for 'std.info.sid'"
+  },
+  {
+    "name": "std.info.sname",
+    "type": "java.lang.String",
+    "description": "A description for 'std.info.sname'"
+  },
+  {
+    "name": "std.info.saddress",
+    "type": "java.lang.String",
+    "description": "A description for 'std.info.saddress'"
+  }
+]}
