@@ -63,7 +63,4 @@ public class EmployeeDaoImpl implements IEmployeeDao {
 		return template.update(DELETE_EMP_BY_SALARY,startSalary,endSalary);
 	}
 	
-	
-	
-
 }

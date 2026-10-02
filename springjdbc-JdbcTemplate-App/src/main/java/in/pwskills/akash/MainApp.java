@@ -45,5 +45,6 @@ public class MainApp {
         
         // Close Spring container
         applicationContext.close();
+        
     }
 }
