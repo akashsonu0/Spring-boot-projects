@@ -27,5 +27,4 @@ public class EmployeeRunner implements CommandLineRunner {
 		service.fetchAllEmployees().forEach(System.out::println);
 			
 	}
-
 }
