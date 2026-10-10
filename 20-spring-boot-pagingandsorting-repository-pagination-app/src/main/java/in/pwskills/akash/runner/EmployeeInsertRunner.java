@@ -33,5 +33,4 @@ public class EmployeeInsertRunner implements CommandLineRunner {
 					)
 			);
 	}
-
 }
