@@ -31,8 +31,6 @@ public class EmployeeSortingRunner implements CommandLineRunner {
 
 		//select * from employee order by esal asc ,edept desc;
 		repo.findAll(Sort.by(Order.asc("empSal"),Order.desc("empDept"))).forEach(System.out::println);
-
-		
 		
 	}
 
