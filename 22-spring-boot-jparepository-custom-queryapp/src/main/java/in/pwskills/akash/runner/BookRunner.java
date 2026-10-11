@@ -48,8 +48,7 @@ public class BookRunner implements CommandLineRunner {
 
 			repo.findByAuthorIsNotNull().forEach(System.out::println);
 			
-			repo.findByBookId(10).ifPresentOrElse(System.out::println, ()->System.out.println("Record not for the given id"));
-			
+			repo.findByBookId(10).ifPresentOrElse(System.out::println, ()->System.out.println("Record not for the given id"));	
 			
 	}
 

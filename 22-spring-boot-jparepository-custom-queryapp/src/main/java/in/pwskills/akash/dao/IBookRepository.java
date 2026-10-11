@@ -36,5 +36,4 @@ public interface IBookRepository extends JpaRepository<Book, Integer> {
 	
 	//select * from booktab where bid=?
 	Optional<Book> findByBookId(Integer id);
-	
 }
