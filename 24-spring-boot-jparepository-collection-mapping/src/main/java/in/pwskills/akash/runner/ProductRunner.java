@@ -45,10 +45,7 @@ public class ProductRunner implements CommandLineRunner {
 		pob.setModels(set);
 		
 		repo.save(pob);
-		
-		
-		
-		
+			
 	}
 
 }
