@@ -37,5 +37,4 @@ public class TestRunner implements CommandLineRunner {
 		prepo.save(p1);
 		prepo.save(p2);
 	}
-
 }
