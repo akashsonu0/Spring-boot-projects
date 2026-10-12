@@ -34,8 +34,6 @@ public class TestRunner implements CommandLineRunner {
 		
 		srepo.save(s1);
 		srepo.save(s2);
-		
 	
 	}
-
 }

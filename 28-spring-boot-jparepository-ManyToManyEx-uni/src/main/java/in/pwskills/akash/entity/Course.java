@@ -60,6 +60,4 @@ public class Course implements Serializable {
 	public String toString() {
 		return "Course [courseId=" + courseId + ", courseName=" + courseName + ", courseFee=" + courseFee + "]";
 	}
-	
-
 }
