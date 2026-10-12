@@ -47,5 +47,4 @@ public class Role implements Serializable {
 	public String toString() {
 		return "Role [roleId=" + roleId + ", roleCode=" + roleCode + "]";
 	}
-
 }
