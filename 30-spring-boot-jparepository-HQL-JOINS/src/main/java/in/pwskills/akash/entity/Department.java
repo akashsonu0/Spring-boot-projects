@@ -10,10 +10,6 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "depttab")
 public class Department implements Serializable {
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	@Id
 	@Column(name = "did")
@@ -64,5 +60,4 @@ public class Department implements Serializable {
 	public String toString() {
 		return "Department [deptId=" + deptId + ", deptName=" + deptName + ", deptAdmin=" + deptAdmin + "]";
 	}
-
 }

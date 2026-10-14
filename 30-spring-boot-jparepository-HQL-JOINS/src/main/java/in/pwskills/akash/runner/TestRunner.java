@@ -9,8 +9,6 @@ import in.pwskills.akash.dao.IDepartmentRepository;
 import in.pwskills.akash.dao.IEmployeeRepository;
 import in.pwskills.akash.entity.Department;
 import in.pwskills.akash.entity.Employee;
-
-
 @Component
 public class TestRunner implements CommandLineRunner {
 	

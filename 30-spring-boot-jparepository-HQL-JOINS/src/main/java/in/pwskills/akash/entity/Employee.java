@@ -12,10 +12,6 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "emptab")
 public class Employee implements Serializable {
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -80,5 +76,4 @@ public class Employee implements Serializable {
 	public String toString() {
 		return "Employee [empId=" + empId + ", empName=" + empName + ", empSal=" + empSal + "]";
 	}
-
 }
