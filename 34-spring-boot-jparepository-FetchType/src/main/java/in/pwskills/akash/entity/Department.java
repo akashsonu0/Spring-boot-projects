@@ -61,5 +61,4 @@ public class Department implements Serializable {
 	public String toString() {
 		return "Department [deptId=" + deptId + ", deptName=" + deptName + ", deptAdmin=" + deptAdmin + "]";
 	}
-
 }
