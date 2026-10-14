@@ -14,10 +14,6 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "OTM_MOBILE")
 public class MobileNumber implements Serializable {
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@Id

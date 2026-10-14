@@ -77,13 +77,11 @@ public class TestRunner implements CommandLineRunner {
 			System.out.println("Record not found for the id :: " + id);
 		}
 		
-		
 		//retrieved from child
 		mrepo.findAll().forEach(mobile->{
 			System.out.println(mobile);
 			Person person = mobile.getPerson();
 			System.out.println(person);
 		});
-
 	}
 }
