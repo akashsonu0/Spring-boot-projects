@@ -50,5 +50,4 @@ public class Employee implements Serializable {
 	public Employee() {
 		
 	}
-	
 }
