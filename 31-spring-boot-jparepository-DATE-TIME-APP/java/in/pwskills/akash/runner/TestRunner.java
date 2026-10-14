@@ -29,9 +29,7 @@ public class TestRunner implements CommandLineRunner {
 		
 				System.out.println("****Customer Object is saved****");
 				
-				repo.findAll().forEach(System.out::println);
-				
+				repo.findAll().forEach(System.out::println);	
 				
 	}
-
 }

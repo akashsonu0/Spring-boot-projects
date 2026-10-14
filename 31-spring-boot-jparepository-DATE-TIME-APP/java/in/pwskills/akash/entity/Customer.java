@@ -12,10 +12,6 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "custtab")
 public class Customer implements Serializable {
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -33,9 +29,7 @@ public class Customer implements Serializable {
 
 	private LocalDate dop;
 
-	public Customer() {
-		// TODO Auto-generated constructor stub
-	}
+	public Customer() {}
 
 	public Integer getCustId() {
 		return custId;
@@ -100,5 +94,4 @@ public class Customer implements Serializable {
 		return "Customer [custId=" + custId + ", custName=" + custName + ", custAddrs=" + custAddrs + ", dob=" + dob
 				+ ", top=" + top + ", dop=" + dop + "]";
 	}
-
 }
